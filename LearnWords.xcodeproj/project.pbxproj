@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BBBBAA71F47906BBAB0CB2A3 /* Pods_LearnWords.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A78498459A339054712F76A /* Pods_LearnWords.framework */; };
+		D8314DE924B192C800BAA6AF /* LanguageIdentificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8314DE824B192C800BAA6AF /* LanguageIdentificationView.swift */; };
+		D87E05AD24B188390017F047 /* TranslateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87E05AC24B188390017F047 /* TranslateView.swift */; };
+		D8AA5E6624B1A6D6001FA67F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D8AA5E6524B1A6D6001FA67F /* GoogleService-Info.plist */; };
+		D8AA5E6924B1F0C3001FA67F /* DocumentContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AA5E6824B1F0C3001FA67F /* DocumentContent.swift */; };
+		D8AA5E6E24B20762001FA67F /* WordsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AA5E6D24B20762001FA67F /* WordsListView.swift */; };
+		D8F06D4924B1848F003E4DEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F06D4824B1848F003E4DEC /* AppDelegate.swift */; };
+		D8F06D4B24B1848F003E4DEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F06D4A24B1848F003E4DEC /* SceneDelegate.swift */; };
+		D8F06D4E24B1848F003E4DEC /* LearnWords.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8F06D4C24B1848F003E4DEC /* LearnWords.xcdatamodeld */; };
+		D8F06D5024B1848F003E4DEC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F06D4F24B1848F003E4DEC /* ContentView.swift */; };
+		D8F06D5224B18491003E4DEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F06D5124B18491003E4DEC /* Assets.xcassets */; };
+		D8F06D5524B18491003E4DEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F06D5424B18491003E4DEC /* Preview Assets.xcassets */; };
+		D8F06D5824B18491003E4DEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F06D5624B18491003E4DEC /* LaunchScreen.storyboard */; };
+		D8F06D6324B18491003E4DEC /* LearnWordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F06D6224B18491003E4DEC /* LearnWordsTests.swift */; };
+		D8F06D6E24B185CA003E4DEC /* DocumentScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F06D6D24B185CA003E4DEC /* DocumentScanView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8F06D5F24B18491003E4DEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8F06D3D24B1848F003E4DEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8F06D4424B1848F003E4DEC;
+			remoteInfo = LearnWords;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D07C4D813615D186AFC25E6 /* Pods-LearnWords.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnWords.release.xcconfig"; path = "Target Support Files/Pods-LearnWords/Pods-LearnWords.release.xcconfig"; sourceTree = "<group>"; };
+		4EECC7B944649BF9B1CB5AE5 /* Pods-LearnWords.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnWords.debug.xcconfig"; path = "Target Support Files/Pods-LearnWords/Pods-LearnWords.debug.xcconfig"; sourceTree = "<group>"; };
+		8A78498459A339054712F76A /* Pods_LearnWords.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnWords.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8314DE824B192C800BAA6AF /* LanguageIdentificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageIdentificationView.swift; sourceTree = "<group>"; };
+		D87E05AC24B188390017F047 /* TranslateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateView.swift; sourceTree = "<group>"; };
+		D8AA5E6524B1A6D6001FA67F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D8AA5E6824B1F0C3001FA67F /* DocumentContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentContent.swift; sourceTree = "<group>"; };
+		D8AA5E6D24B20762001FA67F /* WordsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsListView.swift; sourceTree = "<group>"; };
+		D8F06D4524B1848F003E4DEC /* LearnWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8F06D4824B1848F003E4DEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D8F06D4A24B1848F003E4DEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D8F06D4D24B1848F003E4DEC /* LearnWords.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LearnWords.xcdatamodel; sourceTree = "<group>"; };
+		D8F06D4F24B1848F003E4DEC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D8F06D5124B18491003E4DEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8F06D5424B18491003E4DEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D8F06D5724B18491003E4DEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8F06D5924B18491003E4DEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8F06D5E24B18491003E4DEC /* LearnWordsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnWordsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8F06D6224B18491003E4DEC /* LearnWordsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnWordsTests.swift; sourceTree = "<group>"; };
+		D8F06D6424B18491003E4DEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8F06D6D24B185CA003E4DEC /* DocumentScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentScanView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8F06D4224B1848F003E4DEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBBBAA71F47906BBAB0CB2A3 /* Pods_LearnWords.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8F06D5B24B18491003E4DEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C64A93E46C094DA268A7E26 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4EECC7B944649BF9B1CB5AE5 /* Pods-LearnWords.debug.xcconfig */,
+				3D07C4D813615D186AFC25E6 /* Pods-LearnWords.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		88ECD10A89C67A249A4A5D6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A78498459A339054712F76A /* Pods_LearnWords.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8AA5E6724B1F078001FA67F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8AA5E6824B1F0C3001FA67F /* DocumentContent.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D8AA5E6A24B1F552001FA67F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D8F06D3C24B1848F003E4DEC = {
+			isa = PBXGroup;
+			children = (
+				D8F06D4724B1848F003E4DEC /* LearnWords */,
+				D8F06D6124B18491003E4DEC /* LearnWordsTests */,
+				D8F06D4624B1848F003E4DEC /* Products */,
+				0C64A93E46C094DA268A7E26 /* Pods */,
+				88ECD10A89C67A249A4A5D6F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D8F06D4624B1848F003E4DEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8F06D4524B1848F003E4DEC /* LearnWords.app */,
+				D8F06D5E24B18491003E4DEC /* LearnWordsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8F06D4724B1848F003E4DEC /* LearnWords */ = {
+			isa = PBXGroup;
+			children = (
+				D8AA5E6A24B1F552001FA67F /* Components */,
+				D8AA5E6724B1F078001FA67F /* Model */,
+				D8F06D4824B1848F003E4DEC /* AppDelegate.swift */,
+				D8F06D4A24B1848F003E4DEC /* SceneDelegate.swift */,
+				D8F06D4F24B1848F003E4DEC /* ContentView.swift */,
+				D8F06D6D24B185CA003E4DEC /* DocumentScanView.swift */,
+				D87E05AC24B188390017F047 /* TranslateView.swift */,
+				D8AA5E6D24B20762001FA67F /* WordsListView.swift */,
+				D8314DE824B192C800BAA6AF /* LanguageIdentificationView.swift */,
+				D8F06D5124B18491003E4DEC /* Assets.xcassets */,
+				D8F06D5624B18491003E4DEC /* LaunchScreen.storyboard */,
+				D8F06D5924B18491003E4DEC /* Info.plist */,
+				D8F06D4C24B1848F003E4DEC /* LearnWords.xcdatamodeld */,
+				D8AA5E6524B1A6D6001FA67F /* GoogleService-Info.plist */,
+				D8F06D5324B18491003E4DEC /* Preview Content */,
+			);
+			path = LearnWords;
+			sourceTree = "<group>";
+		};
+		D8F06D5324B18491003E4DEC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D8F06D5424B18491003E4DEC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D8F06D6124B18491003E4DEC /* LearnWordsTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8F06D6224B18491003E4DEC /* LearnWordsTests.swift */,
+				D8F06D6424B18491003E4DEC /* Info.plist */,
+			);
+			path = LearnWordsTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8F06D4424B1848F003E4DEC /* LearnWords */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8F06D6724B18491003E4DEC /* Build configuration list for PBXNativeTarget "LearnWords" */;
+			buildPhases = (
+				04570F3568FC2C21948306F8 /* [CP] Check Pods Manifest.lock */,
+				D8F06D4124B1848F003E4DEC /* Sources */,
+				D8F06D4224B1848F003E4DEC /* Frameworks */,
+				D8F06D4324B1848F003E4DEC /* Resources */,
+				2D35BB39B40EEDCABF8AF260 /* [CP] Embed Pods Frameworks */,
+				B6DC8251CB504AD995703DC6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LearnWords;
+			productName = LearnWords;
+			productReference = D8F06D4524B1848F003E4DEC /* LearnWords.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D8F06D5D24B18491003E4DEC /* LearnWordsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8F06D6A24B18491003E4DEC /* Build configuration list for PBXNativeTarget "LearnWordsTests" */;
+			buildPhases = (
+				D8F06D5A24B18491003E4DEC /* Sources */,
+				D8F06D5B24B18491003E4DEC /* Frameworks */,
+				D8F06D5C24B18491003E4DEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8F06D6024B18491003E4DEC /* PBXTargetDependency */,
+			);
+			name = LearnWordsTests;
+			productName = LearnWordsTests;
+			productReference = D8F06D5E24B18491003E4DEC /* LearnWordsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8F06D3D24B1848F003E4DEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = chen;
+				TargetAttributes = {
+					D8F06D4424B1848F003E4DEC = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					D8F06D5D24B18491003E4DEC = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = D8F06D4424B1848F003E4DEC;
+					};
+				};
+			};
+			buildConfigurationList = D8F06D4024B1848F003E4DEC /* Build configuration list for PBXProject "LearnWords" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8F06D3C24B1848F003E4DEC;
+			productRefGroup = D8F06D4624B1848F003E4DEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8F06D4424B1848F003E4DEC /* LearnWords */,
+				D8F06D5D24B18491003E4DEC /* LearnWordsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8F06D4324B1848F003E4DEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8F06D5824B18491003E4DEC /* LaunchScreen.storyboard in Resources */,
+				D8AA5E6624B1A6D6001FA67F /* GoogleService-Info.plist in Resources */,
+				D8F06D5524B18491003E4DEC /* Preview Assets.xcassets in Resources */,
+				D8F06D5224B18491003E4DEC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8F06D5C24B18491003E4DEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04570F3568FC2C21948306F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LearnWords-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D35BB39B40EEDCABF8AF260 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LearnWords/Pods-LearnWords-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LearnWords/Pods-LearnWords-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LearnWords/Pods-LearnWords-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6DC8251CB504AD995703DC6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LearnWords/Pods-LearnWords-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LearnWords/Pods-LearnWords-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LearnWords/Pods-LearnWords-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8F06D4124B1848F003E4DEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8F06D4924B1848F003E4DEC /* AppDelegate.swift in Sources */,
+				D87E05AD24B188390017F047 /* TranslateView.swift in Sources */,
+				D8AA5E6924B1F0C3001FA67F /* DocumentContent.swift in Sources */,
+				D8F06D4E24B1848F003E4DEC /* LearnWords.xcdatamodeld in Sources */,
+				D8F06D5024B1848F003E4DEC /* ContentView.swift in Sources */,
+				D8AA5E6E24B20762001FA67F /* WordsListView.swift in Sources */,
+				D8F06D6E24B185CA003E4DEC /* DocumentScanView.swift in Sources */,
+				D8F06D4B24B1848F003E4DEC /* SceneDelegate.swift in Sources */,
+				D8314DE924B192C800BAA6AF /* LanguageIdentificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8F06D5A24B18491003E4DEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8F06D6324B18491003E4DEC /* LearnWordsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8F06D6024B18491003E4DEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8F06D4424B1848F003E4DEC /* LearnWords */;
+			targetProxy = D8F06D5F24B18491003E4DEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D8F06D5624B18491003E4DEC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8F06D5724B18491003E4DEC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8F06D6524B18491003E4DEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D8F06D6624B18491003E4DEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8F06D6824B18491003E4DEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EECC7B944649BF9B1CB5AE5 /* Pods-LearnWords.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"LearnWords/Preview Content\"";
+				DEVELOPMENT_TEAM = 974Z47DRWK;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = LearnWords/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cxq.LearnWords;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8F06D6924B18491003E4DEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D07C4D813615D186AFC25E6 /* Pods-LearnWords.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"LearnWords/Preview Content\"";
+				DEVELOPMENT_TEAM = 974Z47DRWK;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = LearnWords/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cxq.LearnWords;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D8F06D6B24B18491003E4DEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LearnWordsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cxq.LearnWordsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearnWords.app/LearnWords";
+			};
+			name = Debug;
+		};
+		D8F06D6C24B18491003E4DEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LearnWordsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cxq.LearnWordsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearnWords.app/LearnWords";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8F06D4024B1848F003E4DEC /* Build configuration list for PBXProject "LearnWords" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8F06D6524B18491003E4DEC /* Debug */,
+				D8F06D6624B18491003E4DEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8F06D6724B18491003E4DEC /* Build configuration list for PBXNativeTarget "LearnWords" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8F06D6824B18491003E4DEC /* Debug */,
+				D8F06D6924B18491003E4DEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8F06D6A24B18491003E4DEC /* Build configuration list for PBXNativeTarget "LearnWordsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8F06D6B24B18491003E4DEC /* Debug */,
+				D8F06D6C24B18491003E4DEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D8F06D4C24B1848F003E4DEC /* LearnWords.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D8F06D4D24B1848F003E4DEC /* LearnWords.xcdatamodel */,
+			);
+			currentVersion = D8F06D4D24B1848F003E4DEC /* LearnWords.xcdatamodel */;
+			path = LearnWords.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D8F06D3D24B1848F003E4DEC /* Project object */;
+}
