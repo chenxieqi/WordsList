@@ -11,15 +11,14 @@ import FirebaseMLNLTranslate
 
 struct TranslateView: View {
     
-    @State var text:String
-    @State var translatedText:String
+    @EnvironmentObject var documentContent:DocumentContent
     
     var body: some View {
-        HStack(alignment: .center, spacing: 20){
-            TextField("Testing language", text: $text)
+        VStack(alignment: .center, spacing: 20){
+            Text(documentContent.content)
                 .font(.system(size: 20))
                 .multilineTextAlignment(.center)
-            Text(translatedText)
+            Text(documentContent.translatedWords[0])
             Button(action:translateText,label:{
                 Text("Translate")
                     .foregroundColor(.white)
@@ -41,13 +40,13 @@ struct TranslateView: View {
     translator.downloadModelIfNeeded(with: conditions) { error in
         guard error == nil else { return }
 
-        translator.translate(self.text) {
+        translator.translate(self.documentContent.content) {
             translatedText, error in
             guard error == nil,
                 let translatedText = translatedText else
             { return }
             
-            self.translatedText = translatedText
+            self.documentContent.translatedWords[0] = translatedText
         }
       }
     }

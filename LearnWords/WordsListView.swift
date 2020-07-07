@@ -10,13 +10,13 @@ import SwiftUI
 
 struct WordsListView: View {
     
-    @State var document:DocumentContent = DocumentContent.init(content: "what a beautiful world", words: ["what","a","beatiful","world"], translatedWords: [""])
+    @State var document:DocumentContent = DocumentContent.init()
     
     var body: some View {
         VStack{
             ForEach(document.words, id: \.self){
                 word in
-                TranslateView(text: word, translatedText: "")
+                TranslateView()
             }
         }
     }

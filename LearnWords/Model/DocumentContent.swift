@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import Combine
 
-struct DocumentContent {
-    var content:String
-    var words:[String]
-    var translatedWords:[String]
+final class DocumentContent:ObservableObject {
+    @Published var content:String = ""
+    @Published var words:[String] = [""]
+    @Published var translatedWords:[String] = [""]
 }

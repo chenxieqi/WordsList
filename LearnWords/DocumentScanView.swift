@@ -12,7 +12,7 @@ import Vision
 
 struct DocumentScanView: View {
     @State private var showingScanningView = false
-    @State var recognizedText:String
+    @EnvironmentObject var documentContent:DocumentContent
     
     var body: some View {
         NavigationView{
@@ -21,7 +21,7 @@ struct DocumentScanView: View {
                     ZStack{
                     RoundedRectangle(cornerRadius: 20, style: .continuous)
                         .fill(Color.gray.opacity(0.2))
-                    Text(recognizedText)
+                        Text(documentContent.content)
                     }
                 }.padding()
             
@@ -44,7 +44,7 @@ struct DocumentScanView: View {
         }
         .navigationBarTitle("Text Recognition")
             .sheet(isPresented: $showingScanningView){
-                DocumentScanViewController(recognizedText: self.$recognizedText)
+                DocumentScanViewController().environmentObject(self.documentContent)
             }
         }
         
@@ -54,14 +54,14 @@ struct DocumentScanView: View {
 
 struct DocumentScanView_Previews: PreviewProvider {
     static var previews: some View {
-        DocumentScanView(recognizedText: "1")
+        DocumentScanView()
     }
 }
 
 struct DocumentScanViewController:UIViewControllerRepresentable{
     
     typealias UIViewControllerType = VNDocumentCameraViewController
-    @Binding var recognizedText: String
+    @EnvironmentObject var documentContent:DocumentContent
     @Environment(\.presentationMode) var presentationMode
     
     func makeUIViewController(context: Context) -> VNDocumentCameraViewController {
@@ -75,7 +75,7 @@ struct DocumentScanViewController:UIViewControllerRepresentable{
     }
     
     func makeCoordinator() -> Coordinator {
-        Coordinator(recognizedText: $recognizedText, parent: self)
+        Coordinator(parent: self)
     }
     
     fileprivate func extractImages(from scan: VNDocumentCameraScan) -> [CGImage]{
@@ -121,18 +121,16 @@ struct DocumentScanViewController:UIViewControllerRepresentable{
     
     
     class Coordinator:NSObject,VNDocumentCameraViewControllerDelegate{
-        var recognizedText:Binding<String>
         var parent: DocumentScanViewController
         
-        init(recognizedText:Binding<String>,parent:DocumentScanViewController) {
-            self.recognizedText = recognizedText
+        init(parent:DocumentScanViewController) {
             self.parent = parent
         }
         
         func documentCameraViewController(_ controller: VNDocumentCameraViewController, didFinishWith scan: VNDocumentCameraScan) {
             let extractedImages = parent.extractImages(from: scan)
             let processedText = parent.recognizeText(from: extractedImages)
-            recognizedText.wrappedValue = processedText
+            self.parent.documentContent.content = processedText
             
             parent.presentationMode.wrappedValue.dismiss()
         }

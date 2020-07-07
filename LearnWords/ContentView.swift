@@ -10,10 +10,17 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @EnvironmentObject var documentContent:DocumentContent
+    
     var body: some View {
+        VStack{
         //LanguageIdentificationView()
-        WordsListView()
+        DocumentScanView().environmentObject(documentContent)
         //Text("Home")
+            NavigationLink(destination: TranslateView().environmentObject(documentContent)) {
+                Text("Translate")
+            }
+        }
     }
 }
 
